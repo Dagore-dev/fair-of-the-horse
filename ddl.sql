@@ -1,6 +1,6 @@
 CREATE TABLE booth (
     id_booth         INTEGER NOT NULL,
-    owner            VARCHAR2(20 CHAR) NOT NULL,
+    name            VARCHAR2(50 CHAR) NOT NULL,
     square_meters    NUMBER(5, 2) NOT NULL,
     street_id_street INTEGER NOT NULL
 );
@@ -17,7 +17,7 @@ ALTER TABLE brotherhood ADD CONSTRAINT brotherhood_pk PRIMARY KEY ( booth_id_boo
 
 CREATE TABLE drink (
     id_drink     INTEGER NOT NULL,
-    denomination VARCHAR2(20 CHAR) NOT NULL
+    denomination VARCHAR2(50 CHAR) NOT NULL
 );
 
 ALTER TABLE drink ADD CONSTRAINT drink_pk PRIMARY KEY ( id_drink );

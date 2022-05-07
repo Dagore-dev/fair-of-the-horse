@@ -30,8 +30,8 @@ CREATE OR REPLACE PROCEDURE list_booth
 IS
   CURSOR curl IS
     SELECT
-      owner,
-      name,
+      booth.name,
+      street.name,
       id_booth
     FROM booth
     JOIN street
